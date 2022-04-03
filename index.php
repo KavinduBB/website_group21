@@ -20,7 +20,7 @@
 
             <?php
                 //Create sql query to display categories from database
-                $sql = "SELECT * FROM tbl_category";
+                $sql = "SELECT * FROM tbl_category WHERE active='Yes' AND featured='Yes' LIMIT 3";
                 //Excecute the query
                 $res = mysqli_query($conn, $sql);
                 //Count rows to check whether the category is available or not
@@ -36,7 +36,29 @@
                         $title = $row['title'];
                         $image_name = $row['image_name'];
                         ?>
-                            
+                                 <a href="category-foods.html">
+                                    <div class="box-3 float-container">
+                                        <?php
+                                            //Check whether image is available or not
+                                            if($image_name=="")
+                                            {
+                                                //Display message
+                                                echo "<div class='error'>Image Not Available.</div>";
+                                            }
+                                            else
+                                            {
+                                                //Image available
+                                                ?>
+                                                    <img src="<?php echo SITEURL; ?>Images/category/<?php echo $image_name; ?>" alt="Pizza" class="img-responsive img-curve">
+                                                <?php
+                                            }
+                                        
+                                        ?>
+
+                                        <h3 class="float-text text-white"><?php echo $title; ?></h3>
+                                    </div>
+                                 </a>
+
                         <?php
                     }
                 }
@@ -47,15 +69,7 @@
                 }
 
             
-            ?>
-
-            <a href="category-foods.html">
-            <div class="box-3 float-container">
-                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
-
-                <h3 class="float-text text-white">Pizza</h3>
-            </div>
-            </a>
+            ?>       
 
             
 
