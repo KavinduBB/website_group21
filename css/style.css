@@ -1,5 +1,5 @@
 /* 
-    Authors: H.M.K.M.Herath;
+    Author: H.M.K.M.Herath;
     Theme: Restaurant Food Order;
     version: 1.0;
 */
@@ -84,6 +84,16 @@ fieldset{
     margin: 5%;
     padding: 3%;
     border-radius: 5px;
+}
+
+.error{
+    padding: 2%;
+    color: red;
+}
+
+.success{
+    padding: 2%;
+    color: green;
 }
 
 
