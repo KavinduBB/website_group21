@@ -1,5 +1,21 @@
 <?php include('partials-front/menu.php'); ?> 
 
+    <?php
+    
+        //Check whether food id is set or not
+        if(isset($_GET['food_id']))
+        {
+            //Get the food id and details of the selected food
+            $food_id = $_GET['food_id'];
+        }
+        else
+        {
+            //Redirect to page
+            header('location:'>SITEURL);
+        }
+    
+    ?>
+
     <!-- fOOD sEARCH Section Starts Here -->
     <section class="food-search">
         <div class="container">
