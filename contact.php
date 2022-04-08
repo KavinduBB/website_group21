@@ -92,7 +92,7 @@
                     Email.send({
                 Host : "https://elasticemail.com/account#/create-account?r=20b444a2-b3af-4eb8-bae7-911f6097521c",
                 Username : "gota308@gmail.com",
-                Password : "#kavi@1997",
+                Password : "",
                 To : 'kavinduherath350@gmail.com',
                 From : document.getElementById("email").value,
                 Subject : "New inquiry",
