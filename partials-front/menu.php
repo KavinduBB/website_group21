@@ -36,6 +36,11 @@
                     <li>
                         <a href="<?php echo SITEURL; ?>contact.php">Contact</a>
                     </li>
+
+                    <li>
+                        <a href="<?php echo SITEURL; ?>admin/login.php">Log in</a>
+                    </li>
+
                 </ul>
             </div>
 
