@@ -230,7 +230,7 @@
                             //Failed to upload
                             $_SESSION['upload'] = "<div class='error'>Failed to Upload Image.</div>";
                             //Redirect to manage food
-                            header('location:'.SITEURL.'admin.manage-food.php'); 
+                            header('location:'.SITEURL.'admin/manage-food.php'); 
                             //Stop the process
                             die();
                         }
